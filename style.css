@@ -23,4 +23,9 @@ nav {
 .fa-bars {
   font-size: 1.5rem;
   color: #2a9aef;
+  cursor: pointer;
+}
+
+.fa-bars:hover {
+  color: #000;
 }
