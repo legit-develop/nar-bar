@@ -29,3 +29,66 @@ nav {
 .fa-bars:hover {
   color: #000;
 }
+
+.menu a {
+  color: gray;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+}
+
+.menu a:hover {
+  background: #2a9aef;
+  color: #fff;
+  padding-left: 1.5rem;
+}
+
+.menu {
+  height: 0;
+  overflow: hidden;
+  transition: all 3s linear;
+}
+
+.show-menu {
+  height: 10rem;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  .nav-main {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+  .fa-bars {
+    display: none;
+  }
+
+  .menu {
+    height: auto;
+    display: flex;
+  }
+
+  .menu a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .menu a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
